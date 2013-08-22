@@ -330,8 +330,8 @@ module.exports = function (grunt) {
   // tasks for images, scripts and styles
   grunt.registerTask('images', ['imagemin:build']);
 
-  grunt.registerTask('scripts:dev', ['jshint:dev', 'copy:scripts', 'uglify:prod']);
-  grunt.registerTask('scripts:prod', ['jshint:dev', 'copy:scripts']);
+  grunt.registerTask('scripts:dev', ['jshint:dev', 'copy:scripts']);
+  grunt.registerTask('scripts:prod', ['jshint:dev', 'copy:scripts', 'uglify:prod']);
   
   grunt.registerTask('json', ['jsonlint', 'copy:json']);
   
